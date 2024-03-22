@@ -1,0 +1,173 @@
+/* Allgemeine Stile */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Horizontalen Scrollen verhindern */
+}
+
+/* Überschrift-Stil */
+#headline-container {
+  height: 100vh; /* Volle Höhe des Viewports */
+  background-image: url('Bild.jpg'); /* Hintergrundbild hinzufügen */
+  background-size: cover;
+  background-position: center; /* Bild zentrieren */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headline {
+  color: #fff; /* Textfarbe auf Weiß setzen */
+  text-align: center;
+  z-index: 999; /* Überschrift über andere Elemente legen */
+  position: relative; /* Position relativ für z-index */
+}
+
+#headline h1 {
+  font-size: 2.5em;
+}
+
+/* Inhaltsverzeichnis-Stil */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333; /* Dunkle Hintergrundfarbe */
+  padding-top: 20px;
+  overflow-y: auto;
+  color: #fff; /* Textfarbe auf Weiß setzen */
+  z-index: 1000; /* Die Sidebar über anderen Inhalt legen */
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  display: block; /* Den Links Block-Element-Eigenschaft geben */
+  text-decoration: none;
+  color: #fff; /* Linkfarbe auf Weiß setzen */
+  font-size: 16px; /* Schriftgröße hinzugefügt */
+}
+
+.sidebar ul li a:hover {
+  background-color: #555; /* Hintergrundfarbe ändern, wenn der Link hervorgehoben wird */
+}
+
+/* Abschnittsstil */
+.section {
+  margin-left: 220px; /* Breite der Sidebar plus Abstand */
+  padding: 20px;
+}
+
+.section h3 {
+  margin-top: 0; /* Obenstes Margin für Überschriften entfernen */
+}
+
+/* Schalterstil */
+.switch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Schalter an linker Seite ausrichten */
+}
+
+.switch {
+  display: flex; /* Schalter-Container als Flex-Container definieren */
+  align-items: center; /* Schalter vertikal zentrieren */
+  margin-bottom: 10px; /* Unten Abstand hinzufügen */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  width: 60px; /* Breite der Schalter anpassen */
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Button-Stil */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Buttons über die gesamte Breite strecken */
+}
+
+button {
+  background-color: #333; /* Hintergrundfarbe wie die Sidebar */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 8px; /* Abstand unten hinzufügen */
+}
+
+button:last-child {
+  margin-bottom: 0; /* Kein Abstand nach dem letzten Button */
+}
+
+button:hover {
+  background-color: #555; /* Dunkleres Grau beim Hovern */
+}
+
+/* Stil für den Text neben den Schaltern */
+.switch-text {
+  margin-left: 10px; /* Abstand zum Schalter hinzufügen */
+  font-size: 14px; /* Schriftgröße festlegen */
+}
+
+/* Stil für deaktivierte Schalter */
+.switch input:disabled + .slider {
+  background-color: #ccc; /* Farbe für deaktivierte Schalter */
+}
+
+.switch input:disabled + .slider:before {
+  background-color: #999; /* Farbe für den Griff des deaktivierten Schalters */
+}
+
+/* Dropdown-Stil */
+#dropdown-container {
+  margin-top: 20px;
+}
+
+#plant-info {
+  margin-top: 20px;
+}
