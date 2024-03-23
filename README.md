@@ -140,7 +140,7 @@ Die unten genannte Software wird benötigt, um unser Programm nutzen zu können.
 
 7. **Gehe nach unten in der Datei und füge folgenden Command ein:**
     ```bash
-    @reboot python3 /home/pi/Automatisiertes_Gewaechshaus/main.py
+    @reboot python3 /home/pi/AutoGrowing/main.py
     
     ```
 8. **Führe die SQL Datei aus:**
