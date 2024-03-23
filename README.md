@@ -145,7 +145,7 @@ Die unten genannte Software wird benötigt, um unser Programm nutzen zu können.
     ```
 8. **Führe die SQL Datei aus:**
     ```bash
-    cd Automatisiertes_Gewaechshaus
+    cd AutoGrowing
     sqlite3 AutoGrowing.db
     .read create.sql
     ```
