@@ -71,57 +71,6 @@ body {
   margin-top: 0; /* Obenstes Margin für Überschriften entfernen */
 }
 
-/* Schalterstil */
-.switch-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Schalter an linker Seite ausrichten */
-}
-
-.switch {
-  display: flex; /* Schalter-Container als Flex-Container definieren */
-  align-items: center; /* Schalter vertikal zentrieren */
-  margin-bottom: 10px; /* Unten Abstand hinzufügen */
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  width: 60px; /* Breite der Schalter anpassen */
-  height: 34px;
-  background-color: #ccc;
-  border-radius: 34px;
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  content: "";
-  height: 26px;
-  width: 26px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
 /* Button-Stil */
 .button-container {
   display: flex;
@@ -146,21 +95,6 @@ button:last-child {
 
 button:hover {
   background-color: #555; /* Dunkleres Grau beim Hovern */
-}
-
-/* Stil für den Text neben den Schaltern */
-.switch-text {
-  margin-left: 10px; /* Abstand zum Schalter hinzufügen */
-  font-size: 14px; /* Schriftgröße festlegen */
-}
-
-/* Stil für deaktivierte Schalter */
-.switch input:disabled + .slider {
-  background-color: #ccc; /* Farbe für deaktivierte Schalter */
-}
-
-.switch input:disabled + .slider:before {
-  background-color: #999; /* Farbe für den Griff des deaktivierten Schalters */
 }
 
 /* Dropdown-Stil */

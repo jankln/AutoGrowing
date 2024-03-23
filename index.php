@@ -147,7 +147,6 @@
             <button id="servo-button" name="servo-button" type="submit">Luftdurchzug öffnen</button>
             <button id="restart-button" name="restart-pi" type="submit">Raspberry Pi neustarten</button>
             <button type="submit" name="reset-sensor-data" id="reset-sensor-data">Sensordaten reset</button>
-            <button type="submit" name="AutoStop" id="AutoStop">Automatisiertes Gewächshaus stoppen</button>
         </form>
         </div>
     </div>
