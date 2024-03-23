@@ -39,11 +39,14 @@ Um mit dem Projekt zu beginnen, stellen Sie sicher, dass Sie über die folgenden
   - BME280
   - Bodenfeuchtigkeitssensor
 
+![Hardware](Hardware.png)
+
 Bitte beachten Sie, dass die Verwendung anderer Hardwarekomponenten zu unerwarteten Fehlern führen kann und die Funktionalität des Projekts beeinträchtigen könnte.
 
 ## Setup
 
 1. **Wir verwenden das Betriebssystem Debian GNU/Linux 11 (bullseye) auf unserem Raspberry Pi 3B+.**
+![Neofetch](OS.png)
 
 ### Benötigte Software
 
