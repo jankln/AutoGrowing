@@ -126,7 +126,7 @@ Die unten genannte Software wird benötigt, um unser Programm nutzen zu können.
 4. Klone das Repository auf deinen Raspberry Pi:
 
    ```bash
-   git clone https://github.com/jankln/Automatisiertes_Gewaechshaus.git
+   git clone https://github.com/jankln/AutoGrowing.git
    ```
 
 5. **Füge main.py und index.php zum Autostart hinzu:**
