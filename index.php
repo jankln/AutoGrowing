@@ -23,7 +23,7 @@
             <li><a href="#plot4">Bodenfeuchtigkeit</a></li>
         </ul>
         <hr class="sidebar-divider"> <!-- Horizontale Abtrennungslinie -->
-
+        <button id="insertPlant" name="insertPlant" onclick="weiterleitenInsertPlant()">Pflanze hinzufügen</button>
         <div id="dropdown-container">
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <select id="plant-dropdown" name="plant-dropdown">
@@ -37,7 +37,6 @@
                     $db = new SQLite3($databaseFile);
 
                     // Erfolgreiche Verbindung
-                    echo "Verbindung zur SQLite-Datenbank erfolgreich hergestellt.";
                 } catch (Exception $e) {
                     // Fehler beim Verbindungsaufbau
                     echo "Fehler beim Verbindungsaufbau zur SQLite-Datenbank: " . $e->getMessage();
@@ -259,7 +258,7 @@
 
     Plotly.newPlot('plot4', data, layout);
 </script>
-
+<script src="script.js"></script>
 
 
 
